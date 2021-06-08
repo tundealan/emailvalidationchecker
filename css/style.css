@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: hsl(0, 4%, 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h3{
+    position: relative;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    margin-bottom: 5px;
+   /* text-align: center;*/
+}
+
+#form{
+    position: relative;
+    border: 2px solid #131313;
+    background: linear-gradient(#1e2024, #18181c);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#form #email{
+    width: 300px;
+    outline: none;
+    background: transparent;
+    border: navajowhite;
+    padding: 12px 15px;
+    padding-right: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#form .indicator{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background: #555;
+    border-radius: 50%;
+}
+
+#form.valid .indicator{
+    background: #0f0;
+    box-shadow: 0 0 5px #0f0,
+                0 0 10px #0f0,
+                0 0 20px #0f0,
+                0 0 40px #0f0;
+}
+
+#form.invalid .indicator{
+    background: #eb0808;
+    box-shadow: 0 0 5px #eb0808,
+                0 0 10px #eb0808,
+                0 0 20px #eb0808,
+                0 0 40px #eb0808;
+}
+
